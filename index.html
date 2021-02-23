@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta name="description" content="Zack Snyder's Justice League - Official Movie Site - On HBO Max 2021.">
+    <meta name="keywords" content="Justice League, Zack Snyder, Snyder Cut">
+    <meta name="author" content="Mohnish">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <link rel="stylesheet" href="https://use.typekit.net/jwi1eot.css">
+    <title>Zack Snyder's Justice League</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h2>JUSTICE LEAGUE</h2>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">PLOT</a></li>
+        <li><a href="#about">CAST</a></li>
+        <li><a href="#videos">VIDEOS</a></li>
+        <li><a href="#gallery">IMAGES</a></li>
+      </ul>
+    </nav>
+    <div class="main-image">
+      <img src="images/main.jpg" alt="Justice League Poster" class="img-main"/>
+      <img src="images/main_480.jpg" alt="" class="img-mob"/>
+    </div>
+    <div class="title" id="about">
+      <h2>ABOUT</h2>
+    </div>
+    <div class="info">
+      <div class="plot" id="plot">
+        <h2>PLOT</h2>
+        <h3>
+          Fueled by his restored faith in humanity and inspired by Superman’s selfless act, Bruce Wayne enlists the help of his newfound ally, Diana Prince, to face an even greater enemy. Together, Batman and Wonder Woman work quickly to find and recruit a team of metahumans to stand against this newly awakened threat.  But despite the formation of this unprecedented league of heroes—Batman, Wonder Woman, Aquaman, Cyborg and The Flash—it may already be too late to save the planet from an assault of catastrophic proportions.
+        </h3>
+      </div>
+      <div class="characters">
+        <h2>CHARACTERS</h2>
+        <div class="up">
+          <img src="images/characters/batman.jpg" alt="Batman">
+          <img src="images/characters/superman.jpg" alt="Superman">
+          <img src="images/characters/ww.jpg" alt="Wonder Woman">
+        </div><br>
+        <div class="down">
+          <img src="images/characters/cyborg.jpg" alt="Cyborg">
+          <img src="images/characters/flash.jpg" alt="Flash">
+          <img src="images/characters/aquaman.jpg" alt="Aquaman">
+        </div>
+      </div>
+    </div>
+    <div class="title" id="videos">
+      <h2>VIDEOS</h2>
+    </div>
+    <div class="main-content">
+      <div class="responsive-video fade mySlides">
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/lPjF9sJcj4A" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="responsive-video fade mySlides">
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/g_6yBZKj-eo" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="responsive-video fade mySlides">
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/3cxixDgHUYw" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div><br>
+    <div class="bullets">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <div class="title" id="gallery">
+      <h2>IMAGES</h2>
+    </div>
+    <div class="container">
+    <div class="myImages">
+      <div class="numbertext">1 / 6</div>
+      <img src="images/gallery/cropped-1920-1080-721135.jpg" style="width:100%" alt="THE LEAGUE">
+    </div>
+
+    <div class="myImages">
+      <div class="numbertext">2 / 6</div>
+      <img src="images/gallery/cropped-1920-1080-738591.png" style="width:100%" alt="Barry Allen / The Flash">
+    </div>
+
+    <div class="myImages">
+      <div class="numbertext">3 / 6</div>
+      <img src="images/gallery/cropped-1920-1080-815999.png" style="width:100%" alt="Victor Stone / Cyborg">
+    </div>
+
+    <div class="myImages">
+      <div class="numbertext">4 / 6</div>
+      <img src="images/gallery/cropped-1920-1080-879585.jpg" style="width:100%" alt="Arthur Curry / Aquaman">
+    </div>
+
+    <div class="myImages">
+      <div class="numbertext">5 / 6</div>
+      <img src="images/gallery/cropped-1920-1080-879593.jpg" style="width:100%" alt="Bruce Wayne and Arthur Curry">
+    </div>
+
+    <div class="myImages">
+      <div class="numbertext">6 / 6</div>
+      <img src="images/gallery/cropped-1920-1080-880561.jpg" style="width:100%" alt="Diana Prince / Wonder Woman">
+    </div>
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="images/gallery/721135_thmb.jpg" style="width:100%" onclick="currentImage(1)" alt="THE LEAGUE">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/gallery/738591_thmb.png" style="width:100%" onclick="currentImage(2)" alt="Barry Allen / The Flash">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/gallery/815999_thmb.png" style="width:100%" onclick="currentImage(3)" alt="Victor Stone / Cyborg">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/gallery/879585_thmb.jpg" style="width:100%" onclick="currentImage(4)" alt="Arthur Curry / Aquaman">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/gallery/879593_thmb.jpg" style="width:100%" onclick="currentImage(5)" alt="Bruce Wayne and Arthur Curry">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/gallery/880561_thmb.jpg" style="width:100%" onclick="currentImage(6)" alt="Diana Prince / Wonder Woman">
+      </div>
+    </div>
+  </div>
+    <footer>
+      <ul>
+        <li><a href="https://www.facebook.com/ZSJusticeLeague/" class="fa fa-facebook" target="_blank"></a></li>
+        <li><a href="https://twitter.com/zacksnydersjl?lang=en" class="fa fa-twitter" target="_blank"></a></li>
+        <li><a href="https://www.youtube.com/channel/UCx-KWLTKlB83hDI6UKECtJQ" class="fa fa-youtube" target="_blank"></a></li>
+        <li><a href="https://www.instagram.com/zacksnydersjusticeleague/" class="fa fa-instagram" target="_blank"></a></li>
+      </ul>
+    </footer>
+  <script src="js/app.js">
+
+    </script>
+  </body>
+</html>

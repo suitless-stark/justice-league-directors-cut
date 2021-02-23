@@ -1,0 +1,290 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  font-family: 'Justice League', sans-serif;
+  background-color: black;
+}
+.logo{
+  color: #ececec;
+  letter-spacing: 5px;
+  font-size: 28px;
+}
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+.nav-links li{
+  list-style: none;
+}
+.nav-links a{
+  color: #ececec;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-size: 24px;
+}
+.burger{
+  display: none;
+  cursor: pointer;
+}
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color: #ececec;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.main-image img{
+  max-width: 100%;
+}
+.img-mob{
+  display: none;
+}
+h3{
+  font-family: bc-alphapipe,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 28px;
+  padding-left: 150px;
+}
+h2{
+  font-family: 'Justice League', sans-serif;
+  font-size: 50px;
+  padding: 50px 50px 50px 50px;
+}
+.info{
+  width: 100%;
+  display: flex;
+}
+.plot{
+  width: 40%;
+}
+.characters{
+  width: 60%;
+}
+.characters img{
+  max-width: 100%;
+  width: 200px;
+  height: 300px;
+  margin-left: 50px;
+}
+.up, .down{
+  padding-left: 210px;
+}
+.videos{
+  height: 800px;
+  background-color: white;
+}
+.main-content{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.responsive-video {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+.responsive-video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+iframe{
+  border: 0;
+}
+.mySlides{
+  display: none;
+}
+.myImages{
+  display: none;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.bullets{
+  text-align: center;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+img {
+  vertical-align: middle;
+}
+.container {
+  position: relative;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 100px;
+}
+.myImages {
+  display: none;
+}
+.cursor {
+  cursor: pointer;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  float: left;
+  width: 16.66%;
+}
+.demo {
+  opacity: 0.6;
+}
+.active,
+.demo:hover {
+  opacity: 1;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: white;
+   margin-bottom: 50px;
+}
+footer ul{
+  display: flex;
+  list-style: none;
+}
+footer li{
+  text-align: center;
+  width: 25%;
+}
+.fa {
+  padding: 20px;
+  font-size: 40px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook, .fa-twitter, .fa-youtube, .fa-instagram{
+  background: black;
+  color: white;
+}
+@media only screen and (max-width: 1024px) {
+  .nav-links{
+    width: 60%;
+  }
+
+  h3{
+    font-size: 16px;
+    padding-left: 50px;
+  }
+  .characters img{
+    margin-left: 12px;
+    max-width: 100%;
+    width: 110px;
+    height: 160px;
+  }
+
+  .up, .down{
+    padding-left: 80px;
+  }
+
+}
+@media only screen and (max-width: 500px) {
+  body{
+    overflow-x: hidden;
+  }
+  nav{
+    display: block;
+    text-align: center;
+  }
+  .nav-links{
+    width: 100%;
+  }
+  .burger{
+    display: block;
+  }
+  .img-main{
+    display: none;
+  }
+  .img-mob{
+    display: block;
+  }
+  h2{
+    padding: 25px 25px 25px 25px;
+  }
+  h3{
+    font-size: 12px;
+    padding-left: 50px;
+  }
+  .plot{
+    width: 50%;
+  }
+  .characters{
+    width: 50%;
+  }
+  .characters img{
+    margin-left: 8px;
+    max-width: 100%;
+    width: 55px;
+    height: 80px;
+  }
+  .up, .down{
+    padding-left: 40px;
+  }
+  .container{
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 50px;
+  }
+  .fa{
+    font-size: 24px;
+    border-radius: 50%;
+    width: 65px;
+  }
+}
